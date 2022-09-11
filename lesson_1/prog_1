@@ -1,0 +1,50 @@
+import math
+
+
+def get_min(nums_array):
+    min_num = nums_array[0]
+    for i in range(1, len(nums_array)):
+        if min_num > nums_array[i]:
+            min_num = nums_array[i]
+    return min_num
+
+
+def get_max(nums_array):
+    max_num = nums_array[0]
+    for i in range(1, len(nums_array)):
+        if max_num < nums_array[i]:
+            max_num = nums_array[i]
+    return max_num
+
+
+def get_mean(nums_array):
+    sum = 0
+    for i in range(len(nums_array)):
+        sum += nums_array[i]
+    return sum/len(nums_array)
+
+
+def get_standard_deviation(nums_array):
+    sum_of_sq = 0
+    mean_num = get_mean(nums_array)
+    for i in range(len(nums_array)):
+        sum_of_sq += (nums_array[i] - mean_num)**2
+    return (sum_of_sq/len(nums_array))**(1/2)
+
+#---------------------------------------------------------------------------------------------------------------------
+
+
+nums_array = []
+
+curr = input()
+while curr == "end":
+    print("Error: number of numerics have to be at least one")
+
+while curr != "end":
+    nums_array.append(int(curr))
+    curr = input()
+
+print(f"min = {get_min(nums_array)}")
+print(f"max = {get_max(nums_array)}")
+print(f"mean = {get_mean(nums_array)}")
+print(f"standard deviation = {get_standard_deviation(nums_array)}")
