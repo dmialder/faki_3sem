@@ -1,0 +1,14 @@
+dictionary = {"abc": 1,
+              "bcd": 2,
+              "cdf": 3,
+              "dfg": 4,
+              "fgh": 5,
+              "ghi": 6}
+
+key, value = input().split()
+
+while key != "end":
+    dictionary[key] = value
+    key, value = input().split()
+
+print({value_of_dictionary: key_of_dictionary for (key_of_dictionary, value_of_dictionary) in dictionary.items()})
