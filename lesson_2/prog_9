@@ -1,0 +1,9 @@
+sleep 1000 &ps 
+[2] 12959
+  PID TTY          TIME CMD
+12645 pts/1    00:00:00 bash
+12931 pts/1    00:00:00 sleep
+12959 pts/1    00:00:00 sleep
+12960 pts/1    00:00:00 ps
+[student@localhost ~]$ kill -9 12931
+[1]-  Killed                  sleep 1000
