@@ -1,0 +1,12 @@
+import math
+barrier = 2500
+
+array_of_squares = []
+
+for i in range(1, round(math.sqrt(barrier)), 10):
+    array_of_squares.append(i*i)
+
+for i in range(9, round(math.sqrt(barrier)), 10):
+    array_of_squares.append(i*i)
+
+print(sorted(array_of_squares))
