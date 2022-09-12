@@ -1,0 +1,5 @@
+  1 mkdir -p /tmp/hello\ world
+  2 touch /tmp/hello\ world/absolute.txt
+  3 echo "hello world!!" > /tmp/hello\ world/absolute.txt
+  4 cat /tmp/hello\ world/absolute.txt
+  5 ls -l /tmp/hello\ world/absolute.txt
