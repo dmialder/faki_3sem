@@ -1,5 +1,10 @@
+def write_array(text_list, file):
+    final_text = "\n".join(map(str, text_list))
+    file.write(final_text)
+    pass
+
+
 text_list = ["lel", "kek", "something", "89", "end"]
 
 with open("C:/documents/projects/projectSpec/for_prog.txt", "w") as file:
-    final_text = "\n".join(map(str, text_list))
-    file.write(final_text)
+    write_array(text_list, file)
