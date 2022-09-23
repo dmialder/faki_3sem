@@ -1,0 +1,9 @@
+# in file:
+#   ds fkjghsdlkfga lskjhd v voash  asldg alsh vlsh glkhsdkba lwk
+#    a;sdfj lsd av sld las lsh lkas lh slk has
+#       skdfkshd lasdf  s   
+
+#-----------------------------------------------------
+with open("C:/documents/projects/projectSpec/for_prog.txt", "r") as file:
+    for string_line in file:
+        print(string_line.strip())
