@@ -1,0 +1,15 @@
+import os
+import zipfile
+
+man = zipfile.ZipFile("C:/documents/projects/projectSpec/src/main.zip")
+man.extractall("C:/documents/projects/projectSpec/src")
+case = set()
+
+ans = []
+for current_dir, dirs, files in os.walk("./src/main"):
+    for name in files:
+        if name[-3::1] == ".py":
+            ans.append(current_dir)
+            break
+
+print(*ans, sep = "\n")
