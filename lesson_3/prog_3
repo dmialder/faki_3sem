@@ -1,9 +1,8 @@
 import os
 import zipfile
 
-man = zipfile.ZipFile("C:/documents/projects/projectSpec/src/main.zip")
-man.extractall("C:/documents/projects/projectSpec/src")
-case = set()
+lel = zipfile.ZipFile("C:/documents/projects/projectSpec/src/main.zip")
+lel.extractall("C:/documents/projects/projectSpec/src")
 
 ans = []
 for current_dir, dirs, files in os.walk("./src/main"):
